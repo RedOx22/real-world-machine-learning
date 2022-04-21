@@ -1,0 +1,4 @@
+# Conditionally filter by lambda condition
+invoices['Meal Price'][invoices['Meal Price'].apply(
+  lambda x: isinstance(x,str)
+)]
